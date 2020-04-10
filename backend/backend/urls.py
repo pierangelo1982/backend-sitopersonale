@@ -24,6 +24,7 @@ urlpatterns = [
     path('api/', include('services.urls')),
     path('api/', include('pages.urls')),
     path('api/', include('blog.urls')),
+    path('api/', include('sliders.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
